@@ -9,15 +9,18 @@ body {
   width: 100vw;
   margin: 0;
   font-family: "Mulish", sans-serif;
+
   .header {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 10px 40px;
-    .logo {
-      max-width: 100px;
-    }
   }
+
+  .logo {
+    max-width: 100px;
+  }
+
   .action {
     box-shadow: 0 1px 3px 1px rgba(60, 64, 67, 0.15),
       0 1px 2px 0 rgba(60, 64, 67, 0.3);
@@ -29,77 +32,56 @@ body {
     padding: 10px 30px;
     background-color: black;
   }
-  .outer {
-    .top {
-      padding: 25px 17px;
-      /* background-image: url("dancer_background.svg"); */
 
-      background-image: linear-gradient(135deg, #010203 10%, #881db3 100%);
-      background-repeat: no-arepeat;
-      background-size: 100% 100%;
-      box-sizing: border-box;
-      min-height: 375px;
-      @include desktop_only {
-      }
+  .bottom {
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(135deg, #010203 10%, #002b82 100%);
+    align-items: center;
+    justify-content: center;
+    padding: 50px 40px;
+    color: white;
+
+    @media (min-width: 860px) {
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: space-between;
     }
-    .top-two {
-      padding: 25px 17px;
-      background-image: url("dancer_background.png");
-      background-repeat: no-arepeat;
-      background-size: 100% 100%;
-      box-sizing: border-box;
+  }
+
+  .content {
+    display: flex;
+    align-items: baseline;
+    flex-direction: column;
+    @media (min-width: 860px) {
+      max-width: 400px;
+      padding-top: 30px;
     }
-    .bottom {
-      display: flex;
-      flex-direction: column;
 
-      background-image: linear-gradient(135deg, #010203 10%, #002b82 100%);
-      align-items: center;
-      justify-content: center;
-      padding: 50px 40px;
-      color: white;
-
+    .textbig {
+      font-size: 28px;
+      margin-bottom: 40px;
       @media (min-width: 860px) {
-        flex-direction: row;
-        align-items: flex-start;
-        justify-content: space-between;
-      }
-
-      .content {
-        display: flex;
-        align-items: baseline;
-        flex-direction: column;
-        @media (min-width: 860px) {
-          max-width: 400px;
-          padding-top: 30px;
-        }
-
-        .textbig {
-          font-size: 28px;
-          margin-bottom: 40px;
-          @media (min-width: 860px) {
-            font-size: 36px;
-          }
-        }
-
-        .textsmall {
-          font-size: 16px;
-          margin-bottom: 40px;
-          @media (min-width: 860px) {
-            font-size: 20px;
-          }
-        }
-
-        .action {
-          background-color: white;
-          color: black;
-          margin-bottom: 40px;
-        }
-      }
-
-      .logo {
-        max-width: 300px;
+        font-size: 36px;
       }
     }
+
+    .textsmall {
+      font-size: 16px;
+      margin-bottom: 40px;
+      @media (min-width: 860px) {
+        font-size: 20px;
+      }
+    }
+
+    .action {
+      background-color: white;
+      color: black;
+      margin-bottom: 40px;
+    }
+  }
+
+  .logo {
+    max-width: 300px;
   }
 }
