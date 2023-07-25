@@ -6,6 +6,10 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Client side routing
+
+[medium article on client side routing](https://medium.com/@bennirus/deploying-a-create-react-app-with-routing-to-github-pages-f386b6ce84c2)
+
 ## Available Scripts
 
 In the project directory, you can run:
